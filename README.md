@@ -1,28 +1,13 @@
-def main():
-    value1 = int(input("Enter an integer value: "))
-    value2 = int(input("Enter an integer value: "))
-    value3 = int(input("Enter an integer value: "))
-    
-    max_value = maximum_three(value1, value2, value3)
-    min_value = minimum_three(value1, value2, value3)
-    avg_value = average_three(value1, value2, value3)
-    
-    print(f"The Maximum of {value1} {value2} {value3} is {max_value}")  
-    print(f"The Minimum of {value1} {value2} {value3} is {min_value}")  
-    print(f"The Average of {value1} {value2} {value3} is {avg_value:.1f}") 
+Python program is designed to take three integer inputs from the user and compute the maximum, minimum, and average of those values. Below is a breakdown of the code, its functionality, and suggestions for improvement.
 
-def maximum_three(value1, value2, value3):
-    return max(value1, value2, value3)
+Code Breakdown
+Main Function:
 
+The main() function collects three integer values from the user.
+It then calls three helper functions to calculate the maximum, minimum, and average of the input values.
+Finally, it prints the results.
+Helper Functions:
 
-def minimum_three(value1, value2, value3):
-    return min(value1, value2, value3)
-
-
-def average_three(value1, value2, value3):
-    avg = (value1 + value2 + value3) / 3
-    return avg
-
-
-if __name__ == "__main__":
-    main()
+maximum_three(value1, value2, value3): Returns the maximum of the three values using the built-in max() function.
+minimum_three(value1, value2, value3): Returns the minimum of the three values using the built-in min() function.
+average_three(value1, value2, value3): Calculates the average by summing the three values and dividing by 3.
