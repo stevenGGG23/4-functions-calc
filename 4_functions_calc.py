@@ -1,4 +1,5 @@
-def main():
+def main(): 
+    print("Hello!")
     try:
         value1 = int(input("Enter the first integer value: "))
         value2 = int(input("Enter the second integer value: "))
