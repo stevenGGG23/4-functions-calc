@@ -1,5 +1,5 @@
 def main(): 
-    print("Hello!")
+
     try:
         value1 = int(input("Enter the first integer value: "))
         value2 = int(input("Enter the second integer value: "))
@@ -7,7 +7,6 @@ def main():
     except ValueError:
         print("Invalid input! Please enter integer values only.")
         return
-    
     max_value = maximum_three(value1, value2, value3)
     min_value = minimum_three(value1, value2, value3)
     avg_value = average_three(value1, value2, value3)
